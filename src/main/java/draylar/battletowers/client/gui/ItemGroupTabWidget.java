@@ -44,7 +44,7 @@ public class ItemGroupTabWidget extends ButtonWidget {
         RenderSystem.blendFunc(GlStateManager.SrcFactor.SRC_ALPHA, GlStateManager.DstFactor.ONE_MINUS_SRC_ALPHA);
 
         this.drawTexture(matrixStack, this.x, this.y, 0, i * height, this.width, this.height);
-        this.renderBg(matrixStack, minecraftClient, mouseX, mouseY);
+        this.renderBackground(matrixStack, minecraftClient, mouseX, mouseY);
 
         minecraftClient.getItemRenderer().renderGuiItemIcon(tab.getIcon(), this.x + 15, this.y + 2);
     }

@@ -11,7 +11,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.ChestBlockEntity;
 import net.minecraft.block.entity.MobSpawnerBlockEntity;
-import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Tickable;
 import net.minecraft.util.math.BlockPos;
@@ -207,17 +207,17 @@ public class ContentDeployerBlockEntity extends BlockEntity implements Tickable 
     }
 
     @Override
-    public CompoundTag toTag(CompoundTag tag) {
+    public NbtCompound writeNbt(NbtCompound tag) {
         tag.putString("FloorID", floorID.toString());
         tag.putBoolean("PlaceChests", placeChests);
         tag.putBoolean("PlaceSpawners", placeSpawners);
         tag.putBoolean("PlaceLadders", placeLadders);
         tag.putInt("Delay", delay);
-        return super.toTag(tag);
+        return super.writeNbt(tag);
     }
 
     @Override
-    public void fromTag(BlockState state, CompoundTag tag) {
+    public void fromTag(BlockState state, NbtCompound tag) {
         this.floorID = new Identifier(tag.getString("FloorID"));
         this.placeChests = tag.getBoolean("PlaceChests");
         this.placeSpawners = tag.getBoolean("PlaceSpawners");

@@ -70,7 +70,7 @@ public class BossLockBlock extends Block {
 
                 TowerGuardianEntity towerGuardianEntity = new TowerGuardianEntity(BattleTowerEntities.TOWER_GUARD, world);
                 towerGuardianEntity.updateTrackedPosition(pos.getX(), pos.getY(), pos.getZ());
-                towerGuardianEntity.updatePosition(pos.getX(), pos.getY(), pos.getZ());
+                towerGuardianEntity.setPosition(pos.getX(), pos.getY(), pos.getZ());
                 world.spawnEntity(towerGuardianEntity);
 
             } else {
