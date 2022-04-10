@@ -4,11 +4,11 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "DamageTrackerAccessor",
+    "DefaultedRegistryMixin",
     "ExtendedSinglePoolElementMixin",
     "GenerationSettingsAccessor",
     "LivingEntityMixin",
     "MobSpawnerBlockEntityMixin",
-    "PlayerEntitySetBonusMixin",
     "SinglePoolElementAccessor",
     "SpawnerBlockMixin"
   ],
@@ -16,7 +16,7 @@
     "defaultRequire": 1
   },
   "client": [
-    "CreativeInventoryScreenMixin",
-    "BossBarHudMixin"
+    "BossBarHudMixin",
+    "CreativeInventoryScreenMixin"
   ]
 }

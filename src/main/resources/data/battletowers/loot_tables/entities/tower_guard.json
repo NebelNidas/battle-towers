@@ -16,27 +16,27 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "battletowers:key_sword"
+          "name": "minecraft:diamond_sword"
         },
         {
           "type": "item",
           "weight": 1,
-          "name": "battletowers:key_pickaxe"
+          "name": "minecraft:diamond_pickaxe"
         },
         {
           "type": "item",
           "weight": 1,
-          "name": "battletowers:key_axe"
+          "name": "minecraft:diamond_axe"
         },
         {
           "type": "item",
           "weight": 1,
-          "name": "battletowers:key_hoe"
+          "name": "minecraft:diamond_hoe"
         },
         {
           "type": "item",
           "weight": 1,
-          "name": "battletowers:key_shovel"
+          "name": "minecraft:diamond_shovel"
         }
       ]
     },
@@ -56,22 +56,22 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "battletowers:key_helmet"
+          "name": "minecraft:diamond_helmet"
         },
         {
           "type": "item",
           "weight": 1,
-          "name": "battletowers:key_leggings"
+          "name": "minecraft:diamond_leggings"
         },
         {
           "type": "item",
           "weight": 1,
-          "name": "battletowers:key_chestplate"
+          "name": "minecraft:diamond_chestplate"
         },
         {
           "type": "item",
           "weight": 1,
-          "name": "battletowers:key_boots"
+          "name": "minecraft:diamond_boots"
         }
       ]
     },
@@ -92,6 +92,20 @@
               "count": {
                 "min": 1,
                 "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 12
               }
             }
           ]
